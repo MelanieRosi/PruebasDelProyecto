@@ -1,0 +1,13 @@
+header {
+    background-color: #c48787;   
+}
+
+header .logo img{
+    max-height:80px ;
+    display: flex;
+    border-radius: 200px;
+}
+
+header .burger {
+    display: inline-block;
+}

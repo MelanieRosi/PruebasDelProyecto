@@ -1,0 +1,30 @@
+a {
+    color: black;
+}
+
+body .home {
+    background-color: rgb(214, 141, 141);
+}
+
+main .titulo{
+    text-align: center;
+}
+
+main .libro{
+    background-color: #dfd7d7;
+}
+main .producto img {
+    max-height:200px ;
+    display: flex;
+    margin: 10px 1px;
+}
+
+main .descripción{
+    background-color: rgb(223, 215, 215);
+    margin: 10px 1px;
+    padding: 5px 5px;
+}
+main .precio{
+ font-weight: bold;
+}
+
