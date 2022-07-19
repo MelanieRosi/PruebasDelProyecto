@@ -2,6 +2,8 @@ a {
     color: black;
 }
 
+
+
 body .home {
     background-color: rgb(214, 141, 141);
 }
@@ -11,7 +13,7 @@ main .titulo{
 }
 
 main .libro{
-    background-color: #dfd7d7;
+    background-color: white;
 }
 main .producto img {
     max-height:200px ;
@@ -21,10 +23,29 @@ main .producto img {
 
 main .descripción{
     background-color: rgb(223, 215, 215);
-    margin: 10px 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 5px 5px;
 }
 main .precio{
  font-weight: bold;
+ text-align: center;
+}
+
+main .libro{
+    display:grid;
+}
+main .portada img{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main .promo{
+
+    padding: 20px;
 }
 

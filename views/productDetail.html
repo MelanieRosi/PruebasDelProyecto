@@ -15,20 +15,26 @@
 
 <body class="home">
     <header>
-        <div class="top">
-            <div class="logo">
-                <a href="/">
-                    <img src="/images/logoprovisorio.jpg" alt="logo de página" >
-                </a>
-            </div>
+        <!--logo que redirecciona al home -->
+        <div class="logo">
+            <a href="/">
+                <img src="/images/logoprovisorio.jpg" alt="logo de página">
+            </a>
         </div>
+        <!--logo del carito que redireccione al carrito -->
+        <div class="cart">
+            <a href="/">
+                <i class="fas fa-shopping-bag"></i>
+        </a>
+        </div>
+
+        <!-- menu hamburguesa-->
         <div class="burger">
             <!-- <input type="none" name="burger" id="burger" checked>-->
             <label for="burger"><i class="fas fa-bars"></i></label>
             <nav>
                 <ul type="none" class="menu">
                     <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Carrito</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
                 <ul type="none" class="user">
@@ -40,22 +46,35 @@
     </header>
     <main>
         <section class="libro">
-            <!--Producto-->
-            <h1  class="titulo">Drácula, Bram Stoker</h1>
-            <div class="producto"> <img  src="/images/DraculaCover.jpg" alt="imagen del producto"> </div>
-            <p class="precio">$6.079 </p> <p>ó en 12x de 1021 pesos con 58
-                centavos $1.02158 pagando con Mercado Crédito</p>
+            <!--imagen del libro, tituloy precio-->
+            <div class="portada"> <img src="/images/DraculaCover.jpg" alt="imagen del producto"> </div>
+            <h1 class="titulo">Drácula, Bram Stoker</h1>
+            <p class="precio">$6.079 </p>
+            <!--<p>ó en 12x de 1021 pesos con 58
+                centavos $1.02158 pagando con Mercado Crédito</p>-->
+
+            <!-- iconos de tarjeta de credito y billete-->
+            <article class="promos">
+                <div class="credito">
+                    <i class="far fa-credit-card"></i>
+                </div>
+                <div class="efectivo">
+                    <i class="far fa-money-bill-alt"></i>
+                </div>
+            </article>
         </section>
+
+        <!-- descripcion del producto-->
         <section class="descripción">
-        <h3>Caracteristicas principales</h3>
-        <p>
-            Título del libro : Drácula (english Edition) <br>
-            Autor : Stoker, Bram <br>
-            Idioma : Inglés <br>
-            Editorial del libro : CreateSpace Independent Publishing Platform <br>
-            Tapa del libro : Blanda <br>
-            Año de publicación : 2018 <br>
-            Modelo : Inglés <br>
+            <h3>Caracteristicas principales</h3>
+            <p>
+                Título del libro : Drácula (english Edition) <br>
+                Autor : Stoker, Bram <br>
+                Idioma : Inglés <br>
+                Editorial del libro : CreateSpace Independent Publishing Platform <br>
+                Tapa del libro : Blanda <br>
+                Año de publicación : 2018 <br>
+                Modelo : Inglés <br>
             </p>
         </section>
         <article>
@@ -71,13 +90,12 @@
     <footer>
         <div class="logo">
             <a href="/">
-                <img src="/images/logoprovisorio.jpg" alt="logo de página" >
+                <img src="/images/logoprovisorio.jpg" alt="logo de página">
             </a>
         </div>
         <nav>
             <ul type="none" class="footer">
                 <li><a href="#">Categorias</a></li>
-                <li><a href="#">Carrito</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
