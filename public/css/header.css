@@ -1,29 +1,40 @@
 header {
     background-color: var(--rojizo);
     margin-bottom: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 header .logo img{
     max-height:80px;
-    justify-content: center;
     border-radius: 200px;
+    margin: 5px;
+    
 }
 
 header .cart {
-    display:flex;
-    justify-content: flex-end;
     margin-top: 20px;
     margin-right: 10px;
 }
 header .burger {
-    /*display: flex;*/
     margin-top: 20px;
     margin-left: 10px;
-
-    /*position: absolute;
-    width: 35px;
-    height: 35px;
-    left: 3px;
-    top: 8px;*/
-
 }
+
+/*tablet*/ /*
+@media (min-width:460px) {
+    header{
+
+    }
+}
+*/
+/*desktop*/
+/*
+@media (min-width:768px) {
+    header{
+
+    }
+}*/
