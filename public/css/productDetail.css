@@ -1,58 +1,114 @@
 a {
     color: black;
 }
-
 body .home {
     background-color: rgb(214, 141, 141);
 }
-
 main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
-
 main .titulo{
     text-align: center;
 }
-
 main .libro{
     background-color: white;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
+main div .portada{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 
-main div .portada img {
-    max-height:200px;
-    margin: 10px 1px;
 }
-
+main div .portada img {
+    height:315px;
+    margin: 10px 1px;
+    margin: auto;
+}
 main .descripción{
-    background-color: rgb(223, 215, 215);
+    background-color: var(--amarillo);
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 5px 5px;
 }
 main .precio{
- font-weight: bold;
- text-align: center;
+    font-weight: bold;
+    text-align: center;
 }
-
 main .libro{
     display:grid;
 }
 main .portada img{
-    height: 200px;
-    display: flex;
-    justify-content: center;
+    height: 200px;    
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
-
 main .promo{
-
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
+main .efectivo ,
+main .credito{
+    margin-left:10px;
+}
+main .promos p{
+    font-size: small;
+}
+main .redes{
+    background-color: var(--rojizo);
+    margin: 10px auto;
+}
+main .redes ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+main .red-icon{
+    margin: 4px;
+    height: 30px;
+}
+main .relacionados{
+    text-align: center;
+    font-weight: bold;
+
+}
+main .parecidos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+main .otroslibros img{
+    height: 200px;
+    margin: 5px
+}
+
+/*tablet*/ /*
+@media (min-width:460px) {
+    main{
+
+    }
+}
+*/
+/*desktop*/
+/*
+@media (min-width:768px) {
+    main{
+
+    }
+}*/
+
 

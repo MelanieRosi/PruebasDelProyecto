@@ -1,10 +1,29 @@
 footer {
     background-color: var(--rojizo);
     margin-bottom: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
 }
 
 footer .logo img{
-    max-height:80px ;
-    display: flex;
+    height:80px ;
     border-radius: 200px;
+    margin: 5px;
 }
+
+/*tablet*/ /*
+@media (min-width:460px) {
+    footer{
+
+    }
+}
+*/
+/*desktop*/
+/*
+@media (min-width:768px) {
+    footer{
+
+    }
+}*/
