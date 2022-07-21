@@ -2,6 +2,7 @@
 /*enlaces con color negro*/
 a {
     color: black;
+    text-decoration: none;
 }
 /*fondo del body*/
 body .home {
@@ -83,6 +84,7 @@ main .envios{
     margin: 20px 10px 10px 10px;
     padding: 10px;
     width: 100%;
+    border-radius: 4px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -102,9 +104,11 @@ main .envios a{
 }
 /*descripcion del libro*/
 main .descripción{
-    width: 100%;
-    background-color: var(--amarillo);
-    margin-top: 10px 20px 10px 20px;
+    width: 90%;
+    background-color: var(--white);
+    border: 5px solid var(--amarillo);
+    border-radius: 4px;
+    margin: 10px 20px 10px 20px;
     padding: 5px 5px;
     justify-content: center;
 }
@@ -118,6 +122,7 @@ main .descripción p{
 main .redes{
     background-color: var(--rojizo);
     margin:20px;
+    border-radius: 4px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

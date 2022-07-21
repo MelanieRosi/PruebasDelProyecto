@@ -1,6 +1,6 @@
 /*caja de header*/
 header {
-    background-color: var(--rojizo);
+    background-color: var(--blanco);
     margin-bottom: 20px;
     padding: 5px;
     display: flex;
@@ -8,7 +8,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
 }
-/*burger, logo y carrito*/
+/*header top: burger desplegable, logo, login y carrito*/
 header .top{
     width: 100%;
     display: flex;
@@ -17,11 +17,15 @@ header .top{
     justify-content: space-between;
     margin-bottom: 1px;
 }
+/*burger desplegable*/
 header .burger label{
     display:flex;
     margin-top: 20px;
     margin-left: 10px;
     font-size: 1.5em;
+}
+header .burger i{
+    color:var(--azul);
 }
 header .burger input{
     display:none
@@ -44,22 +48,38 @@ header nav a{
     display: block;
     width: 100%;
 }
+/*logo img*/
 header .logo img{
-    max-height:80px;
-    border-radius: 200px;
+    height:100px;
     margin-top: 5px; 
     margin-bottom: 30px;
     align-self: center;
 }
+/*logo de login para pantallas grandes*/
+header .login-icon{
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 1.5em;
+    display:none;
+}
+header .login-icon i{
+    color:var(--azul)
+}
+/*logo de carrito*/
 header .cart {
     margin-top: 20px;
     margin-right: 10px;
     font-size: 1.5em;
 }
+header .cart i{
+    color:var(--azul);
+}
 /*lupa y barra de busqueda*/
 header .busqueda{
     background-color:var(--amarillo);
+    border:3px solid var(--azul);
     width: 100%;
+    border-radius: 4px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -74,17 +94,63 @@ header .lupa-boton{
     background-color: var(--amarillo);
     border-radius: 9px;
 }
-/*tablet*/ /*
-@media (min-width:460px) {
-    header{
+/*opciones de menu grande*/
+header .menu-opciones{
+    background-color: var(--blanco);
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-grow: 1;
+}
+header .menu-opciones ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+header .menu-opciones li{
+    background-color: var(--azul);
+    padding: 5px;
+    margin:4px;
+    border-radius: 5px;
+    text-align: center;
+}
+header .menu-opciones a{
+    color: var(--blanco);
+    text-transform:uppercase;
+}
+.menu-opciones ul li:first-child{
+    display: none;
+}
 
+
+/*tablet*/ 
+@media (min-width:460px) {
+    header .top{
+        justify-content: space-evenly;
+    }
+    header .burger{
+        display:none
+    }
+    header .logo{
+        width: 80%;
+    }
+    header .menu-opciones{
+        display: flex;
+    }
+    header .login-icon{
+        display: flex;
+        justify-content: end;
+    }
+    header .cart{
+justify-content: flex-end;
     }
 }
-*/
 /*desktop*/
-/*
 @media (min-width:768px) {
-    header{
-
-    }
-}*/
+        header .menu-opciones ul li:first-child{
+            display: flex;
+        }     
+}
