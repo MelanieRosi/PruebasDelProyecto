@@ -6,14 +6,20 @@ footer {
     flex-direction: row;
     justify-content:space-evenly;
 }
-
+footer .footer-top{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 footer .logo img{
     height:80px ;
     border-radius: 200px;
     margin: 5px;
 }
 
-footer p{
+footer .derechos{
     font-size: smaller;
     font-weight: bold;
     text-align: center;

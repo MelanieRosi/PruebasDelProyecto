@@ -17,17 +17,15 @@
         <section class="top">
         <!-- menu hamburguesa-->
         <div class="burger">
-            <!-- <input type="none" name="burger" id="burger" checked>-->
+            <input type="checkbox" name="burger" id="burger" checked>
             <label for="burger"><i class="fas fa-bars"></i></label>
-            <!-- <nav>
+            <nav>
                 <ul type="none" class="menu">
                     <li><a href="#">Categorias</a></li>
                     <li><a href="#">Contacto</a></li>
-                </ul>
-                <ul type="none" class="user">
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Registro</a></li>
-                </ul> -->
+                </ul>
             </nav>
         </div>
         <!--logo que redirecciona al home -->
@@ -45,7 +43,7 @@
     </section>
         <!--barra de busqueda-->
     <section class="busqueda">
-        <div class="lupa"><i class="fas fa-search"></i></div>
+        <div class="lupa"><button class="lupa-boton"><i class="fas fa-search"></i></button></div>
     </section>
     </header>
     <main>
@@ -71,7 +69,7 @@
             <button class="boton-agregar">Agregar al carrito</button>
             <article class="envios">
                 <h4>Metos de envio</h4>
-                <input placeholder="Tu código postal">
+                <input type="number" placeholder="Tu código postal">
                 <button>Calcular</button>
                 <a href="/">No se mi codigo postal.</a>
             </article>
@@ -102,21 +100,22 @@
         <section class="parecidos">
             <h3 class="relacionados">Productos relacionados</h3>
             <article class="otroslibros">
-                <img src="/images/SilenceOfTheLamb.PNG" alt="portada de silence of the lamb">
+               <a href="/detalle"><img src="/images/SilenceOfTheLamb.PNG" alt="portada de silence of the lamb"></a>
             </article>
             <article class="otroslibros">
-                <img src="/images/Carrie.PNG" alt="portada de carrie">
+                <a href="/detalle"><img src="/images/Carrie.PNG" alt="portada de carrie"></a>
             </article>
             <article class="otroslibros">
-                <img src="/images/interviewwiththevampire.PNG" alt="portada de interview with the vampire">
+                <a href="/detalle"><img src="/images/interviewwiththevampire.PNG" alt="portada de interview with the vampire"></a>
             </article>
             <article class="otroslibros">
-                <img src="/images/edgarallanpoe.PNG" alt="portada de coleccion de edgar allan poe">
+                <a href="/detalle"><img src="/images/edgarallanpoe.PNG" alt="portada de coleccion de edgar allan poe"></a>
             </article>
         </section>
     </main>
     <footer>
         <!-- lista del footer-->
+        <section class="footer-top">
         <nav>
             <ul type="none" class="footer">
                 <li><a href="#">Categorias</a></li>
@@ -129,8 +128,8 @@
                 <img src="/images/logoprovisorio.jpg" alt="logo de página">
             </a>
         </div>
-        <p>Todos los derechos reservados.</p>
+    </section>
+        <p class="derechos">Todos los derechos reservados.</p>
     </footer>
 </body>
-
 </html>
