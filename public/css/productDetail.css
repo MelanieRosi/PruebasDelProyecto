@@ -16,6 +16,7 @@ main {
 
 /*portada del libro, titulo, precio*/ 
 main .libro{
+    width: 100%;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
@@ -43,31 +44,80 @@ main .libro .precio{
     text-align: center;
     margin: 5px 10px;
 }
-/*descripcion del libro*/
-main .descripción{
-    background-color: var(--amarillo);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px 5px;
-}
 /* iconos de tarjeta de credito o efectivo*/
-main .promo{
+main .promos{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: flex-start;
 }
 main .efectivo ,
 main .credito{
+    width: 100%;
     margin-left:10px;
 }
 main .promos p{
+    width: 100%;
     font-size: small;
+}
+/*boton de agregar al carrito y caja de envios y compra por local*/
+main .compra{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--blanco);
+    margin: 20px;
+}
+main .boton-agregar{
+    width: 50%;
+    border-radius: 9px;
+    font-size:medium;
+    color: var(--azul);
+    margin-left: 10px;
+}
+main .envios{
+    background-color: var(--azul);
+    margin: 20px 10px 10px 10px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+main .envios h4{
+    width: 100%;
+    margin: 10px 10px;
+    text-align: center;
+}
+main .envios a{
+    width: 100%;
+    text-align: start;
+    font-size:x-small;
+    justify-content: flex-start;
+    margin-top: 8px;
+}
+/*descripcion del libro*/
+main .descripción{
+    width: 100%;
+    background-color: var(--amarillo);
+    margin-top: 10px 20px 10px 20px;
+    padding: 5px 5px;
+    justify-content: center;
+}
+main .descripción h3{
+    text-align: center;
+}
+main .descripción p{
+    text-align: center;
 }
 /*espacio de redes sociales*/
 main .redes{
     background-color: var(--rojizo);
-    margin-left: 20px;
-    margin-right: 20px;
+    margin:20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -80,11 +130,12 @@ main .red-icon{
 }
 /*productos relacionados*/
 main .relacionados{
+    width: 100%;
     text-align: center;
     font-weight: bold;
-
 }
 main .parecidos{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
