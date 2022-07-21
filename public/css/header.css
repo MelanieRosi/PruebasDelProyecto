@@ -42,11 +42,16 @@ header nav{
 }
 header nav ul{
     width: 100%;
-    justify-content: flex-start;
+    background-color: var(--amarillo);
+    border: 2px solid var(--azul);
+    border-radius: 4px;
+    padding: 5px;
 }
-header nav a{
+header .burger-op{
     display: block;
     width: 100%;
+    color:var(--azul);
+    text-align: center;
 }
 /*logo img*/
 header .logo img{
