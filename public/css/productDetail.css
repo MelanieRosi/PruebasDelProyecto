@@ -1,57 +1,56 @@
+
+/*enlaces con color negro*/
 a {
     color: black;
 }
+/*fondo del body*/
 body .home {
     background-color: rgb(214, 141, 141);
 }
+/*main*/
 main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
-main .titulo{
-    text-align: center;
-}
+
+/*portada del libro, titulo, precio*/ 
 main .libro{
     background-color: white;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
-main div .portada{
+main .portada{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+}
+main .portada img{
+    height: 315px;
 
 }
-main div .portada img {
-    height:315px;
-    margin: 10px 1px;
-    margin: auto;
+main .libro .titulo{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8px;
 }
+main .libro .precio{
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 10px;
+}
+/*descripcion del libro*/
 main .descripción{
     background-color: var(--amarillo);
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 5px 5px;
 }
-main .precio{
-    font-weight: bold;
-    text-align: center;
-}
-main .libro{
-    display:grid;
-}
-main .portada img{
-    height: 200px;    
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
+/* iconos de tarjeta de credito o efectivo*/
 main .promo{
     display: flex;
     flex-wrap: wrap;
@@ -64,21 +63,22 @@ main .credito{
 main .promos p{
     font-size: small;
 }
+/*espacio de redes sociales*/
 main .redes{
     background-color: var(--rojizo);
-    margin: 10px auto;
-}
-main .redes ul{
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-
+    flex-grow: 1;
 }
 main .red-icon{
     margin: 4px;
-    height: 30px;
+    font-size: 1.1em;
 }
+/*productos relacionados*/
 main .relacionados{
     text-align: center;
     font-weight: bold;

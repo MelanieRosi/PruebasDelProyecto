@@ -4,13 +4,19 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content:space-evenly;
 }
 
 footer .logo img{
     height:80px ;
     border-radius: 200px;
     margin: 5px;
+}
+
+footer p{
+    font-size: smaller;
+    font-weight: bold;
+    text-align: center;
 }
 
 /*tablet*/ /*
