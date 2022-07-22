@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body{
+body .detalle-de-producto{
     font-family: var(--Fuente);
     background-color: white;
     margin: 0 auto;   
