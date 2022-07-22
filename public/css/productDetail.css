@@ -118,21 +118,7 @@ main .descripción h3{
 main .descripción p{
     text-align: center;
 }
-/*espacio de redes sociales*/
-main .redes{
-    background-color: var(--rojizo);
-    margin:20px;
-    border-radius: 4px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-grow: 1;
-}
-main .red-icon{
-    margin: 4px;
-    font-size: 1.1em;
-}
+
 /*productos relacionados*/
 main .relacionados{
     width: 100%;
@@ -168,3 +154,24 @@ main .otroslibros img{
 }*/
 
 
+
+
+
+
+
+
+
+main .redes{
+    background-color: var(--rojizo);
+    margin:20px;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+main .red-icon{
+    margin: 4px;
+    font-size: 1.1em;
+}
